@@ -1,18 +1,4 @@
-# https://linoxide.com/how-tos/change-linux-shell-prompt-with-different-colors/
-# https://askubuntu.com/questions/372849/what-does-debian-chrootdebian-chroot-do-in-my-terminal-prompt
-
 PS1="${STY:+\[\033[4;36m\]screen:${STY%%.*}>\[\033[24;00m\] }[\[\033[0;32m\]\u\[\033[0;33m\]@\h\[\033[00m\] \[\033[01;00m\]\w\[\033[00m\]]\$ "
-
-#if [ -z $STY ]
-#then
-##   PS1="[[0;32m\\u\e[m\e[0;33m@\h\e[m \w\[\033[00m\]]\$ "
-##    PS1="\[\033[0;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ "
-##    PS1="[\[\033[0;32m\]\u\[\033[0;33m\]@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]]\$ "
-#    PS1="[\[\033[0;32m\]\u\[\033[0;33m\]@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]]\$ "
-#
-#else 
-#    PS1="\[\033[0;36m\]screen:${STY%%.*}\[\033[00m\]-[\[\033[0;32m\]\u\[\033[0;33m\]@\h\[\033[00m\] \w\[\033[00m\]]\$ "
-#fi
 
 export LC_TIME="en_US.UTF8"
 
@@ -29,8 +15,3 @@ alias fah="grep '>' "
 alias wl="wc -l "
 
 
-# for PHP 7.1 cli
-export PATH="/opt/rh/rh-php71/root/bin:$PATH"
-
-# for composer
-export PATH="~/.config/composer/vendor/bin:$PATH" 

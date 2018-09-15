@@ -23,6 +23,8 @@ while (<>) {
     } 
 
     $n++ ;
-    print "$_\t$n\n" if (eof) ;
+#    print "$_\t$n\n" if (eof) ;
     $lastidx = $_ ;
 }
+
+print "$lastidx\t$n\n" ;

@@ -41,6 +41,8 @@ set shiftwidth=4
 "change color
 hi Comment ctermfg=lightgreen
 "hi Comment ctermbg=darkgrey
+hi DONE ctermfg=black ctermbg=darkgreen
+match DONE /DONE/
 
 " possible cterm colors:
 " black, blue, cyan, gray, green, magenta, red, white, yellow

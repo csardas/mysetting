@@ -61,3 +61,6 @@ endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 " end tab completion
 
+" Toggle auto-indent enable or not for pasting dataset
+set pastetoggle=<F2>
+
